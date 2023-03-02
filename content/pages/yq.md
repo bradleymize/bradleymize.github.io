@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 1
   title: yq
 ---
-yq tips and tricks
-
-
-
+(DRAFT) Get parent node based on presence of child key
+```bash
+echo "${yaml}" | yq '[.. | select(type == "object" and has("repository")) | (.repository | split("/") | last) + ":" + .tag]'
+```
