@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 2
   title: k8s
 ---
-k8s tips and tricks
+k8s tips and tricks and commands
 
 
 
