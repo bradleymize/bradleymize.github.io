@@ -1513,10 +1513,6 @@ nav ul li a.active {
   width: 100% !important;
 }
 
-.max-w-5xl {
-  max-width: 64rem !important;
-}
-
 .flex-none {
   flex: none !important;
 }
