@@ -6,4 +6,14 @@ eleventyNavigation:
   key: bash
   title: bash
 ---
-{{title}} tips and tricks and commands
+
+* Edit variable in loop and persist outside
+  Don't use pipes, those cause subshells:
+  ```bash
+  counter=0
+  while read -r line
+  do
+    counter=((counter+1))
+  done <<< "${multiLineThing}
+  echo "Count: ${counter}"
+  ```
