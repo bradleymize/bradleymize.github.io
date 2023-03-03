@@ -1,13 +1,14 @@
 ---
-title: yq
+title: jq
 date: Last Modified 
-permalink: /yq.html
+permalink: /jq.html
 eleventyNavigation:
-  key: yq 
-  order: 1
-  title: yq
+  key: jq
+  title: jq / yq
 ---
-(DRAFT) Get parent node based on presence of child key
-```bash
-echo "${yaml}" | yq '[.. | select(type == "object" and has("repository")) | (.repository | split("/") | last) + ":" + .tag]'
-```
+
+- Get parent node based on presence of child key
+  ```bash
+  echo "${yaml}" | jq '[.. | select(type == "object" and has("repository")) | (.repository | split("/") | last) + ":" + .tag]'
+  ```
+- Something else

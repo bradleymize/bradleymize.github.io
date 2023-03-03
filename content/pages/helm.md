@@ -1,12 +1,9 @@
 ---
-title: Kubernetes
+title: Helm
 date: Last Modified 
-permalink: /k8s.html
+permalink: /helm.html
 eleventyNavigation:
-  key: kubernetes
-  title: Kubernetes
+  key: helm
+  title: Helm
 ---
 {{title}} tips and tricks and commands
-
-
-

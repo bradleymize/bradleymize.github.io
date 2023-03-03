@@ -1,12 +1,9 @@
 ---
-title: Kubernetes
+title: AWS
 date: Last Modified 
-permalink: /k8s.html
+permalink: /aws.html
 eleventyNavigation:
-  key: kubernetes
-  title: Kubernetes
+  key: aws
+  title: AWS
 ---
 {{title}} tips and tricks and commands
-
-
-

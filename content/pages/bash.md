@@ -1,12 +1,9 @@
 ---
-title: Kubernetes
+title: Bash
 date: Last Modified 
-permalink: /k8s.html
+permalink: /bash.html
 eleventyNavigation:
-  key: kubernetes
-  title: Kubernetes
+  key: bash
+  title: bash
 ---
 {{title}} tips and tricks and commands
-
-
-
