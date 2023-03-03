@@ -13,5 +13,5 @@ eleventyNavigation:
     template:
       metadata:
         annotations:
-          checksum/someName: {{ include (print $.Template.BasePath "/some-configmap.yaml") . | sha256sum }}
+          checksum/someName: {% raw %}{{ include (print $.Template.BasePath "/some-configmap.yaml") . | sha256sum }}{% endraw %}
   ```
