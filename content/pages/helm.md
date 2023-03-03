@@ -6,4 +6,12 @@ eleventyNavigation:
   key: helm
   title: Helm
 ---
-{{title}} tips and tricks and commands
+
+* Trigger deployment restart based on configmap change
+  ```yaml
+  spec:
+    template:
+      metadata:
+        annotations:
+          checksum/someName: {{ include (print $.Template.BasePath "/some-configmap.yaml") . | sha256sum }}
+  ```
