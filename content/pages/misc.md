@@ -24,3 +24,16 @@ eleventyNavigation:
     background-color: #555 !important;
   }
   ```
+
+* Creating an SSH Key (and adding to a Git account)
+  ```bash
+  ssh-keygen
+  # provide password
+  chmod 400 ~/.ssh/id_rsa
+  eval `ssh-agent`
+  ssh-add ~/.ssh/id_rsa
+  # provide password
+  # add ~/.ssh/id_rsa.pub to necessary git account
+  # test the ssh key, e.g. using bitbucket
+  ssh -T git@bitbucket.org
+  ```
