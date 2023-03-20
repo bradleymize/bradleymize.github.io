@@ -16,3 +16,8 @@ eleventyNavigation:
   ```bash
   aws resourcegroupstaggingapi get-resources --tag-filters Key=<tag name>,Values=<tag value>
   ```
+
+* Get just the resource type/name with a given tag (and/or value)
+  ```bash
+  aws resourcegroupstaggingapi get-resources --tag-filters Key=<tag name> | jq '.ResourceTagMappingList[].ResourceARN | split(":") | .[-2] + ":" + .[-1]'
+  ```
