@@ -18,3 +18,13 @@ eleventyNavigation:
   ```bash
   docker images | grep <search> | awk '{print $1 ":" $2}' | xargs docker rmi
   ```
+
+* Listing all images in a repository (also works via browser)
+  ```bash
+  curl -s https://<domain>/v2/_catalog | jq
+  ```
+
+* List all tags for an image (newest at top; via browser, newest will be at the bottom)
+  ```bash
+  curl -s https://<domain>/v2/<image>/tags/list | jq '.tags | reverse'
+  ```
