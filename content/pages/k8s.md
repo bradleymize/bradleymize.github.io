@@ -16,3 +16,8 @@ eleventyNavigation:
   ```bash
   kubectl -n <namespace> patch targetgroupbinding.elbv2.k8s.aws <resource name> --type=merge --patch <json path to patch>
   ```
+
+* Delete all pods in a given namespace
+  ```bash
+  kubectl -n <namespace> get pod -o Name | xargs -n 1 kubectl -n <namespace> delete $1 --force
+  ```
