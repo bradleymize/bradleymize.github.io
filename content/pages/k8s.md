@@ -29,3 +29,13 @@ eleventyNavigation:
   ```bash
   kubectl -n <namespace> get pod -o Name | xargs -n 1 kubectl -n <namespace> delete $1 --force
   ```
+
+* View events for a particular pod
+  ```bash
+  kubectl get event -n <namespace> --field-selector involvedObject.name=<pod>
+  ```
+  
+* Decode secret
+  ```bash
+  kubectl -n <namespace> get secret <secret name> -o jsonpath='{.data.*}' | base64 -d
+  ```
