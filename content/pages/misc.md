@@ -24,6 +24,17 @@ eleventyNavigation:
     background-color: #555 !important;
   }
   ```
+* Confluence dark mode
+  ```js
+  document.getElementsByTagName('html')[0].style.setProperty("--ds-surface", "#222");
+  document.getElementsByTagName('html')[0].style.setProperty("--ds-background-neutral", "#111");
+  document.getElementsByTagName('html')[0].style.setProperty("--ds-text", "#FFF");
+  document.getElementsByTagName('html')[0].style.setProperty("--ds-text-subtle", "#AAF");
+  ```
+  Bookmarklet
+  ```js
+  javascript:function apply() { document.getElementsByTagName('html')[0].style.setProperty("--ds-surface", "#222"); document.getElementsByTagName('html')[0].style.setProperty("--ds-background-neutral", "#111"); document.getElementsByTagName('html')[0].style.setProperty("--ds-text", "#FFF"); document.getElementsByTagName('html')[0].style.setProperty("--ds-text-subtle", "#AAF"); } apply();
+  ```
 
 * Creating an SSH Key (and adding to a Git account)
   ```bash
