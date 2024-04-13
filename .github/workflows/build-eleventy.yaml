@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@master
 
       - name: Build
-        uses: TartanLlama/actions-eleventy@v1.3
+        uses: TartanLlama/actions-eleventy@vmaster
         with:
           install_dependencies: true
 
