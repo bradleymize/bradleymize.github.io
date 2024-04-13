@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Build
-        uses: TartanLlama/actions-eleventy@vmaster
+        uses: TartanLlama/actions-eleventy@master
         with:
           install_dependencies: true
 
