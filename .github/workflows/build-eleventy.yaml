@@ -9,13 +9,13 @@ on:
 jobs:
   build-deploy:
     name: Eleventy Build
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Git Checkout
         uses: actions/checkout@master
 
       - name: Build
-        uses: TartanLlama/actions-eleventy@master
+        uses: patrickweaver/actions-eleventy@upgrade-node-22
         with:
           install_dependencies: true
 
