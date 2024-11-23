@@ -2,9 +2,9 @@ const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
-const svgContents = require("eleventy-plugin-svg-contents");
+// const svgContents = require("eleventy-plugin-svg-contents");
 const mdIterator = require('markdown-it-for-inline')
-const embedEverything = require("eleventy-plugin-embed-everything");
+// const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginTOC = require('eleventy-plugin-nesting-toc');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
@@ -12,8 +12,8 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function(eleventyConfig) {
   // eleventyConfig.addPlugin(pluginTOC);
-  eleventyConfig.addPlugin(svgContents); 
-  eleventyConfig.addPlugin(embedEverything);
+  // eleventyConfig.addPlugin(svgContents); 
+  // eleventyConfig.addPlugin(embedEverything);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
