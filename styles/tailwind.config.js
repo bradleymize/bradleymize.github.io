@@ -49,6 +49,15 @@ module.exports = {
                 display: 'none',
               }
             },
+            'code': {
+              'background-color': '#2b2b2b !important',
+              color: '#a9b7c6',
+              'border-radius': '3px',
+              padding: '2px 5px'
+            },
+            'code::before, code::after': {
+              content: 'unset'
+            }
           },
         },
       }

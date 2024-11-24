@@ -25,7 +25,7 @@
     scroll-margin-top: 3.5em;
   }
   .prose pre code {
-    @apply overflow-x-auto !important 
+    @apply overflow-x-auto !important
   }
   .prose .footer-nav a {
     @apply no-underline !important

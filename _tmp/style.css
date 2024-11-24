@@ -560,6 +560,7 @@ video {
       [type='text'],
       [type='email'],
       [type='password'],
+      [type='number'],
       [type='search'],
       [type='time'],
       textarea,
@@ -580,7 +581,7 @@ video {
   line-height: 1.5rem;
 }
 
-[type='text']:focus, [type='email']:focus, [type='password']:focus, [type='search']:focus, [type='time']:focus, textarea:focus, select:focus {
+[type='text']:focus, [type='email']:focus, [type='password']:focus, [type='number']:focus, [type='search']:focus, [type='time']:focus, textarea:focus, select:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
@@ -900,9 +901,12 @@ nav ul li a.active {
 }
 
 .prose code {
-  color: #111827;
+  color: #a9b7c6;
   font-weight: 600;
   font-size: 0.875em;
+  background-color: #2b2b2b !important;
+  border-radius: 3px;
+  padding: 2px 5px;
 }
 
 .prose code::before {
@@ -1110,6 +1114,10 @@ nav ul li a.active {
  .prose .tag a {
   color: #333;
   text-decoration: none;
+}
+
+.prose code::before, .prose code::after {
+  content: unset;
 }
 
 .prose-sm {
@@ -2125,9 +2133,12 @@ nav ul li a.active {
   }
 
   .sm\:prose code {
-    color: #111827;
+    color: #a9b7c6;
     font-weight: 600;
     font-size: 0.875em;
+    background-color: #2b2b2b !important;
+    border-radius: 3px;
+    padding: 2px 5px;
   }
 
   .sm\:prose code::before {
@@ -2330,6 +2341,10 @@ nav ul li a.active {
 
   .sm\:prose > :last-child {
     margin-bottom: 0;
+  }
+
+  .sm\:prose code::before, .sm\:prose code::after {
+    content: unset;
   }
 
   .sm\:text-xs {
